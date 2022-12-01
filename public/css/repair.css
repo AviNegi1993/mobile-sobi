@@ -1,0 +1,77 @@
+/* / ___________ Start CSS for hero Section _________ / */
+.hero-repair {
+    background: url("../images/hero-repair.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 100px 0;
+    position: relative;
+}
+.hero-repair::after {
+    position: absolute;
+    content: "";
+    background: rgb(21 245 255 / 95%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.repair-wrapper {
+    position: relative;
+    z-index: 9;
+}
+.btn-gray  {
+    width: 100%;
+    max-width: 150px;
+    background: #bcbec0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 45px;
+    color: #fff;
+}
+.repair-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.repair-form .form_group {
+    width: 32%;
+}
+.repair-form select {
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    line-height: 1;
+    appearance: none;
+    background-image: url("../images/down-arrow.png");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: 95%;
+}
+.repair-form label {
+    color: #333;
+    padding: 0 0 10px 7px;
+}
+.repair-wrapper>h4 {
+    font-size: 24px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-shadow: 0 0 30px rgb(0 0 0 / 35%);
+}
+.repair-card-wrap {
+    padding: 75px 0;
+}
+
+@media (max-width: 767px) {
+	.repair-form .form_group {
+	    width: 100%;
+	    margin: 10px 0;
+	}
+	.repair-form label {
+	    padding: 0 0 5px 5px;
+	}
+	.btn-gray {
+	    margin-top: 20px;
+	}
+}

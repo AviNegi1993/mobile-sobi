@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\RepairProductController;
 use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Frontend\FrontendController;
 use App\Http\Controllers\HomeController;
 
 
@@ -74,6 +75,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('update-user-profile/{id}', [App\Http\Controllers\Admin\AdminController::class, 'updateUserProfile'])->name('updateUserProfile');
 });
 });
+Route::any('term', [App\Http\Controllers\Frontend\FrontendController::class, 'term'])->name('term');
 
 Auth::routes([
     'register' => true
